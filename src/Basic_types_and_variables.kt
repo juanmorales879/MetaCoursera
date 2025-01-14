@@ -81,4 +81,25 @@ fun main() {
     println(scoreBoost)
     println(finalBoostedScore)
 
+    // Char
+    val character : Char = 'A'
+    val age1 = 70
+    val mystring = "My age is $age"
+    val chartostring = character.toString() // character to strings
+    val stringlength = chartostring.length
+    val strings = "Hello"
+    val find = strings.startsWith("Hel")
+    val find2 = strings.endsWith("llo")
+    val firstchar = strings.first()
+    val lastchar = strings.last()
+    val equals = strings.equals("Hello") //returns true or false
+    val upper = strings.uppercase()
+    val lower = strings.lowercase()
+    val subs = strings.substring(1)
+
+
+
+
+
+
 }
