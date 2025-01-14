@@ -1,3 +1,5 @@
+import java.security.KeyStore.TrustedCertificateEntry
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -97,7 +99,25 @@ fun main() {
     val lower = strings.lowercase()
     val subs = strings.substring(1)
 
-
+    // Booleans
+    var cooked: Boolean = true
+    // AND
+    println("A" == "A")
+    print(true && true)  // true
+    print(true && false)  // false
+    print(false && true)  // false
+    print(false && false)  // false
+    // OR
+    print(true || true)  // true
+    print(true || false)  // true
+    print(false || true)  // true
+    print(false || false)  // false
+    //NOT
+    println(!true) // false
+    println(!!true) // true
+    println(!!!true) // false
+    println(!!!!true) // true
+    println(!!!!!true) // false
 
 
 
