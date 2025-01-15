@@ -119,6 +119,101 @@ fun main() {
     println(!!!!true) // true
     println(!!!!!true) // false
 
+    //CONDITIONALS
+    val finished = true
+    if (finished){
+        println("Finished")
+    } else{
+        println("Not finished")
+    }
+
+    val probability = 80
+
+    when {
+        probability < 10 -> println("Low probability")
+        probability <= 80 -> println("High probability")
+        else -> "Not valid"
+    }
+
+    val number = 8
+    when (number){
+        1 -> print("Not true")
+        2,3,4,5 -> println("Close")
+        8 -> println("Bingo")
+        in 10..20 -> print("Too far")
+    }
+
+    val text = when (number){
+        1 -> "Missed"
+        8 -> "Bingo"
+        else -> "Nothing"
+    }
+    println(text)
+
+    //Type check
+    val value = "String"
+    println(value is String) //true
+    when (value){
+        is String -> println("Its a string")
+    }
+
+    //LOOPS
+
+    var Print = true
+    while (Print){
+        println("Inside loop")
+        Print = false
+    }
+
+    val letters = listOf("A","B","C")
+    for (letter in letters){
+        println(letter)
+    }
+
+    for (i in 1..5 step 2){
+        println(i)
+    } //skips by 2 and include until 5
+
+    val ax = 0
+    val bx = 5
+    for (i in ax until bx) {
+        println(i)
+    } // excludes bx
+
+    for (i in 5 downTo 1 step 2 ){
+        println(i)
+    } // decrease in increments of 2
+
+    for (i in 1..5) {
+
+        val numberOfSpaces = i - 1
+
+        for (j in 1..numberOfSpaces) {
+            print(" ")
+        }
+        val numberOfStars = 6 - i
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+        println()
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
